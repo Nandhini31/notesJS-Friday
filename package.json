@@ -1,0 +1,23 @@
+{
+  "name": "exit",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nandhini31/new-notesJS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nandhini31/new-notesJS/issues"
+  },
+  "homepage": "https://github.com/Nandhini31/new-notesJS#readme"
+}
