@@ -7,7 +7,6 @@
 
   NoteController.prototype.render = function () {
     document.getElementById("app").innerHTML = this.view.renderList();
-    console.log(this.view.renderList());
   };
 
   exports.NoteController = NoteController;
