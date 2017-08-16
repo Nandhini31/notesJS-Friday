@@ -9,7 +9,7 @@
     var string = "<ul>";
 
     this.list.noteList().forEach(function(note) {
-      string += "<li><div>" + note.text() + "</div></li>";
+      string += "<li><div>" + note.text().substring(0,19) + "</div></li>";
     });
      string += "</ul>";
     return string;
