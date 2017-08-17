@@ -6,10 +6,12 @@
   }
 
   NoteListView.prototype.renderList = function(){
+
     var string = "<ul>";
 
     this.list.noteList().forEach(function(note) {
-      string += "<li><div>" + note.text().substring(0,19) + "</div></li>";
+      var noteid = note.getId();
+      string += "<li><div><a href=\"#notes/" + noteid +"\">" + note.text().substring(0,19) + "</a></div></li>";
     });
      string += "</ul>";
     return string;

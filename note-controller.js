@@ -1,7 +1,7 @@
 (function(exports) {
   function NoteController(list) {
     this.list = list;
-    list.createNote("text");
+    list.createNote("New note 1");
     this.view = new NoteListView(list);
   }
 
