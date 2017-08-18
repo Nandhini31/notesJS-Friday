@@ -12,6 +12,11 @@
     this.id +=1;
     note = new Note(text, this.id);
     this.listOfNotes.push(note);
+    console.log(note);
+  };
+
+  List.prototype.getNoteContentId = function(id){
+    return this.listOfNotes[id-1];
   };
 }
 exports.List = List;

@@ -5,10 +5,22 @@
     <title>Index page</title>
   </head>
   <body>
-    <div id = "app">hello</div>
-  <script src = "js/note-model.js"></script>
-  <script src = "js/note-list.js"></script>
-  <script src = "js/note-list-view.js"></script>
-  <script src = "note-controller.js"></script>
+    <div id="app"></div>
+    <script src = "js/note-model.js"></script>
+    <script src = "js/note-list.js"></script>
+    <script src = "js/note-list-view.js"></script>
+    <script>
+    list = new List();
+    list.createNote("Testing notes. This is a note number 1");
+    list.createNote("Testing notes. This is a note number 2");
+    list.createNote("Testing notes. This is a note number 3");
+    </script>
+    <script src = "js/single-note-view.js"></script>
+    <script src = "note-controller.js"></script>
+    <script>
+    controller = new NoteController(list);
+    controller.render();
+    controller.loadSingleNote();
+    </script>
 </body>
 </html>
